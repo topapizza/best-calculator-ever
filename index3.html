@@ -1,0 +1,87 @@
+<!--HEI SINÄ 3 LUOKKALAINEN JOKA LEIKKII HACKERIA.👋
+Tahtoisin ilmoittaa että html koodin muokkaaminen EI ole hackerointia vaikka se sun luokkalaisten mielestä siltä näyttää, ja sehän on tärkeintä :D
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinta-ala</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h2>Toivon hullu laskin</h2>
+    <h2>Pinta-ala laskin</h2>
+    <br>
+    <br>
+    <br>
+    <!--SCREENS V-->
+    <!--FIRST SCREEN V-->
+    <div id="calcContainer">
+            <div id="calculator">       
+            <h1>Kanta(leveys) tai säde(r)</h1>
+            <input id="display" readonly>
+            <div id="keys">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">,</button>
+                <button onclick="clearDisplay()" class="operator-btn">C</button>
+            </div>
+        </div>
+        
+        <!--midlle screen V-->
+        <div id="calculator">
+            <h1>Vastaus</h1>
+            <input id="display2" readonly>
+            <div id="keys">
+                <h1></h1>
+                <br>
+                <a href="index.html" class="button">Normi laskin</a>
+                <p></p>
+                <button onclick="calculateRectangleArea()">🟥</button>
+                <button onclick="calculateTriangleArea()">🔺</button>
+                <button onclick="calculateCircleArea()">🔴</button>
+            </div>
+        </div>
+        
+
+        <!--OTHER SCREEN V-->
+        <div id="calculator">     
+            <h1>Korkeus</h1>   
+            <input id="display1" readonly>
+            <div id="keys">
+                <button onclick="appendToDisplay1('7')">7</button>
+                <button onclick="appendToDisplay1('8')">8</button>
+                <button onclick="appendToDisplay1('9')">9</button>
+                <button onclick="appendToDisplay1('4')">4</button>
+                <button onclick="appendToDisplay1('5')">5</button>
+                <button onclick="appendToDisplay1('6')">6</button>
+                <button onclick="appendToDisplay1('1')">1</button>
+                <button onclick="appendToDisplay1('2')">2</button>
+                <button onclick="appendToDisplay1('3')">3</button>
+                <button onclick="appendToDisplay1('0')">0</button>
+                <button onclick="appendToDisplay1('.')">,</button>
+                <button onclick="clearDisplay1()" class="operator-btn">C</button>
+            </div>
+        </div>
+
+        
+    </div>
+    <h2 style="text-align: center;">Pyöristää automaattisesti 3 desimaalin tarkkuudella</h2>
+
+    
+    <script src="thirdScript.js">
+
+    </script>
+</body>
+</html>
